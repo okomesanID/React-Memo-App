@@ -8,7 +8,6 @@ export const MemoContainer = (props) => {
 
   return(
    <div>
-      <div>記録数：{props.Memo.length}</div>
       <h3>メモの一覧</h3>
       <div>{Memos}</div>
   </div>
