@@ -14,7 +14,6 @@ export const Memo = (props) => {
   background-color: #FFCC66; 
   padding: 8px;
   margin: 8px;
-  width: 98%;
   `;
   const SButton = styled.button`
   background-color: #EEEEEE;

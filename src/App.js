@@ -46,21 +46,29 @@ function App() {
   border: solid 1px #aaa;
   padding: 4px;
   border-radius: 8px;
-  margin-left: 335px;
   margin-buttom: 10px;
   display: block;
+  margin-left: auto;
+  width: 40%;
+  high: 30%;
   &:hover {
     background-color: #aaa;
     color: #fff;
     cursor: pointer;
   }
   `;
+  const Stextarea = styled.textarea`
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 80px;
+  margin-left: -4px;
+  `;
 
   return (
     <div>
       <MContainer>
         <h1>Memo App</h1>
-        <textarea typy="text" rows="4" cols="50" wrap="hard" ref={Ref}/>
+        <Stextarea typy="text" rows="4"  wrap="hard" ref={Ref}/>
         <SButton onClick={AddMemo}>追加</SButton>
         <div>記録数：{Memo.length}</div>
       </MContainer>
